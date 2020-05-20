@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/dark"
+        android:alpha="0.8">
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:drawable/editbox_background">
+
+            <EditText
+                android:textColor="@color/dark"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:id="@+id/edit_text"
+                android:hint="Enter Location"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:gravity="center_vertical"
+                android:background="@android:drawable/editbox_background">
+            </EditText>
+
+            <Button
+                android:id="@+id/bt_location"
+                android:layout_marginLeft="2dp"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:background="@drawable/gps"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_width="360dp"
+            android:layout_height="53dp"
+            android:id="@+id/text_view1"
+            android:fontFamily="monospace"
+            android:padding="12dp"
+            android:background="@drawable/btn_bg2"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+             />
+
+
+    </LinearLayout>
+
+</LinearLayout>
